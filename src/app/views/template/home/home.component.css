@@ -1,0 +1,141 @@
+section.banner {
+    width: 100%;
+    height: 150px;
+    background: url(/assets/img/banner-mobile.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/***** conteudo principal home ****/
+header.headConteudo {
+    background-color: #D90404;
+}
+header.headConteudo h2{
+    font-size: 120%;
+    padding: 7px 8px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+section.principaisOfertas .maisOfertas{
+    width: 90%;
+    padding: 2% 5%;
+    margin: 14px auto 0;
+    border-radius: 5px;
+    background-color: red;
+    border: 2px solid #a30000;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 107%;
+    display: block;
+    text-align: center;
+}
+section.principaisOfertas{
+    margin: 10px 0 0px;
+    padding: 0 0 20px;
+}
+section.principaisOfertas .row .cardProduto{
+    display: flex;
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #FFF;
+    /*border: thin solid #AAA;*/
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px #6A6A6A;
+    width: 100%;
+}
+section.principaisOfertas .row .cardProduto header{
+    width: 45%;
+}
+section.principaisOfertas .row .cardProduto header .cardProdutoClassificacao{
+    width: 100%;
+    color: red;
+    margin-bottom: 10px;
+}
+section.principaisOfertas .row .cardProduto header img{
+    width: 100%;
+}
+section.principaisOfertas .row .cardProduto div {
+    width: 60%;
+}
+section.principaisOfertas .row .cardProduto div .cardProdutoInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 76%;
+}
+section.principaisOfertas .row .cardProduto div .cardProdutoInfo h3.produto_titulo{
+    font-size: 0.9rem;
+    color: #7d7d7d;
+}
+section.principaisOfertas .row .cardProduto div .cardProdutoInfo span{
+    color: #AAA;
+    font-size: 0.7rem;
+}
+section.principaisOfertas .row .cardProduto div .cardProdutoInfo strong{
+    color: red;
+    font-size: 120%;
+}
+section.principaisOfertas .row .cardProduto div .btnPagamento{
+    font-size: 1rem;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    width: 100%;
+    font-weight: 600;
+    background-color: #FF0000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 25px;
+}
+/****** Medias Querys *****/
+@media screen and (max-width: 470px){
+
+}
+@media screen and (min-width: 470px){
+    section.principaisOfertas .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    section.principaisOfertas .row .cardProduto{
+        width: 48%;
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    section.principaisOfertas .row .cardProduto header{
+        width: 100%;
+        padding: 10px 10px 0;
+
+    }
+    section.principaisOfertas .row .cardProduto div {
+        width: 100%;
+        
+    }
+    section.principaisOfertas .row .cardProduto div .cardProdutoInfo{
+        padding: 0px 10px;
+    }
+}
+@media screen and (min-width: 515px){
+    section.principaisOfertas .row{
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+    }
+    section.principaisOfertas .row .cardProduto{
+        width: 240px;
+        margin: 0 3px 5px;
+    }
+}
+@media screen and (min-width: 1000px){
+
+    section.principaisOfertas .maisOfertas {
+        width: 239px;
+        padding: 5px;
+        margin-left: 79%;
+    }
+    section.principaisOfertas .row{
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,188 @@
+body, header, footer, main, section, div, ul, li, input, button, figure, a, p, span, h1, h2, h3, h4, h5, h6, img {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header .header-mobile nav {
+    display: none;
+}
+header .header-mobile nav.activeMenu {
+    display: block;
+}
+header .header-mobile .navMobile{
+    /* display: none; */
+    width: 100%;
+    background-color: #0D0D0D;
+    position: absolute;
+    z-index: 1;
+    padding: 5px 15px 3px;
+}
+header .header-mobile .navMobile li{
+    border-bottom: 2px dashed #2B2B2B;
+}
+header .header-mobile .navMobile li a{
+    display: block;
+    font-size: 16px;
+    color: #FFF;
+    padding: 0.5rem 0;
+}
+header .header-mobile{
+    background-color:  #0D0D0D;
+}
+header .header-mobile .header-mobile__top{
+    display: flex;
+    justify-content:  space-between;
+    padding: 5px;
+}
+header .header-mobile .header-mobile__top .top-left button{
+    background-color:  #0D0D0D;
+    border: none;
+}
+header .header-mobile .header-mobile__top .top-left button i{
+    font-size: 150%;
+    color: white;
+}
+header .header-mobile .header-mobile__top .top-left a.logo {
+    margin-left: 5px;
+    color: white;
+}
+header .header-mobile .header-mobile__top .top-right a{
+    color: white;
+}
+header .header-mobile .header-mobile__top .top-right a i{
+    font-size: 120%;
+    margin: 0 5px;
+}
+header .header-mobile .header-mobile__search{
+    padding: 3px;
+}
+header .header-mobile .header-mobile__search .mobile--search{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+    padding: 10px 5px 8px;
+}
+header .header-mobile .header-mobile__search .mobile--search input{
+    width: 80%;
+    border: none;
+    font-size: 1.2rem;
+    color: #6A6A6A;
+}
+header .header-mobile .header-mobile__search .mobile--search input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+header .header-mobile .header-mobile__search .mobile--search button{
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+}
+header .header-mobile .header-mobile__search .mobile--search button i{
+    font-size: 153%;
+}
+
+header .header-desk{
+    display: none;
+}
+header .header-desk .headerTop{
+    background-color: #0D0D0D;
+}
+header .header-desk .headerTop .headerRedesSociais {
+    display: flex;
+    align-items: center;
+}
+header .header-desk .headerTop .headerRedesSociais a,
+header .header-desk .headerTop .headerAreaCliente a{
+    display: inline-block;
+    padding: 5px;
+    color: #FFF;
+}
+header .header-desk .headerTop .headerRedesSociais a:hover {
+    background-color: red;
+}
+header .header-desk .headerTop .headerRedesSociais a i{
+    font-size: 130%;
+}
+header .header-desk .headerTop .headerAreaCliente{
+    display: flex;
+    align-items: center;
+}
+header .header-desk .headerCenter{
+    background-color: rgb(39, 39, 39);
+    padding: 0.5rem 0;
+}
+header .header-desk .headerCenter .busca{
+    width: 60%;
+}
+header .header-desk .headerCenter .busca .campo_busca{
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF;
+}
+header .header-desk .headerCenter .busca .campo_busca input{
+    outline: none;
+    width: 90%;
+    font-size: 1rem;
+    border: none;
+    margin: 5px 10px;
+}
+header .header-desk .headerCenter .busca .campo_busca button{
+    font-size: 1rem;
+    background-color: #FFF;
+    border: none;
+    /*padding: 0 10px;*/
+    margin-right: 10px;
+}
+header .header-desk .headerCenter .usuario{
+    width: 20%;
+}
+header .header-desk .headerCenter .usuario a{
+    font-size: 1rem;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+}
+header .header-desk .headerCenter .usuario a i{
+    font-size: 1.6rem;
+    margin-right: 10px;
+}
+
+header .header-desk .navMenu{
+    background-color: rgb(173, 2, 2);
+}
+header .header-desk .navMenu a,
+header .header-desk .navMenu button{
+    text-transform: uppercase;
+    color: #FFF;
+}
+header .header-desk .navMenu a{
+    display:  inline-block;
+    padding: 0.5rem;
+    font-weight:400;
+}
+header .header-desk .navMenu button{
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: transparent;
+    padding: 3px;
+    border: none;
+}
+header .header-desk .navMenu button i{
+    font-size: 1.4rem;
+    margin-right: 12px;
+}
+@media screen and (min-width: 1000px){
+    header .header-desk{
+        display: block;
+    }
+    header .header-mobile {
+        display: none;
+    }
+}

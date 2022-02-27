@@ -1,0 +1,82 @@
+<header>
+    <div class="header-mobile">
+        <div class="container-grid">
+            <div class="header-mobile__top">
+                <div class="top-left">
+                    <button id="btnMenu"><i class="fas fa-bars"></i></button>
+                    <a routerLink="" class="logo">GamerMania</a>
+                </div>
+                <div class="top-right">
+                    <a routerLink="/page/login" title="Usuario"><i class="far fa-user-circle"></i></a>
+                    <a href="" title="Loja"><i class="fas fa-store"></i></a>
+                    <a href="" title="favoritos"><i class="far fa-heart"></i></a>
+                    <a routerLink="/page/carrinho" title="Sacola"><i class="fas fa-shopping-basket"></i></a>
+                </div>
+            </div>
+            <div class="header-mobile__search">
+                <form action="">
+                    <div class="mobile--search">
+                        <label for="inputBuscarProduto" hidden>Digite o que você está procurando?</label>
+                        <input id="inputBuscarProduto" type="text" name="buscador" placeholder="O que você está procurando?"><button><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+            <nav id="nav">
+                <ul class="navMobile">
+                    <li><a routerLink="/page/categoria">Lançamentos</a></li>
+                    <li><a routerLink="/page/categoria">Destaques</a></li>
+                    <li><a routerLink="/page/categoria">PC Gamer</a></li>
+                    <li><a routerLink="/page/categoria">Eletrônicos</a></li>
+                    <li><a routerLink="/page/categoria">Hardware</a></li>
+                    <li><a routerLink="/page/categoria">Consoles</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="header-desk">
+        <div class="headerTop">
+            <div class="container-grid d-flex d-flex-between alignItems-center">
+                <div class="headerRedesSociais">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="headerAreaCliente">
+                    <a routerLink="/page/login"><i class="fas fa-user-circle"></i> Minha Conta</a>
+                    <a routerLink="/page/contato"><i class="fas fa-headset"></i> Atendimento</a>
+                </div>
+            </div>
+        </div>
+        <div class="headerCenter">
+            <div class="container-grid d-flex d-flex-between">
+                <div class="logo">
+                    <a routerLink="" ><img src="./assets/img/logo-pequena.svg" alt="Game Mania"></a>
+                </div>
+                <div class="busca">
+                    <!-- <form> -->
+                        <div class="campo_busca">
+                            <input id="inputBuscar" type="text" placeholder="O que está procurando?"><button id="btnBuscar" onclick="pesquisar()"><i class="fas fa-search"></i></button>
+                        </div>
+                    <!-- </form> -->
+                </div>
+                <div class="usuario d-flex d-flex-between">
+                    <a routerLink="/page/login"class="iUser" title="Usuario"><i class="fas fa-user-circle"></i> Entrar</a>
+                    <a routerLink="/page/favorito" title="Favorito"><i class="far fa-heart"></i></a>
+                    <a routerLink="/page/carrinho" title="Sacola"><i class="fas fa-shopping-basket"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav class="navMenu">
+            <div class="container-grid d-flex d-flex-between">
+                <button><i class="fas fa-bars"></i> Departamentos</button>
+                <a routerLink="/page/categoria">Lançamentos</a>
+                <a routerLink="/page/categoria">Destaques</a>
+                <a routerLink="/page/categoria">PC Gamer</a>
+                <a routerLink="/page/categoria">Eletrônicos</a>
+                <a routerLink="/page/categoria">Hardware</a>
+                <a routerLink="/page/categoria">Consoles</a>
+            </div>
+        </nav>
+    </div>
+</header>

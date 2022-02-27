@@ -1,0 +1,161 @@
+body, header, footer, main, section, div, ul, li, input, button, figure, a, p, span, h1, h2, h3, h4, h5, h6, img {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/***** rodape - footer ****/
+footer .rodapeSelos {
+    max-width: 1300px;
+    background-color: #6A6A6A;
+    text-align: center;
+    padding: 10px 5px;
+}
+footer .rodapeSelos .formasPagamento h4 {
+    color: white;
+    font-weight: 400;
+}
+footer .rodapeSelos .formasPagamento img {
+    width: 90%;
+    margin-top: 15px;
+}
+footer .rodapeSelos .certificadoSeguranca h4{
+    margin-top: 15px;
+    color: white;
+    font-weight: 400;
+}
+footer .rodapeSelos .certificadoSeguranca div a img{
+    /*width: 15%;*/
+    margin: 15px 5px 0;
+}
+footer .rodapeInstitucional {
+    background-color: black;
+    padding: 10px 8px;
+}
+footer .rodapeInstitucional div h4{
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px 0;
+}
+footer .rodapeInstitucional div ul{
+    display: none;
+}
+footer .rodapeInstitucional div ul li{
+    padding: 5px 0;
+}
+footer .rodapeInstitucional div ul li a{
+    color: white;
+    font-size: 0.9rem;
+}
+footer .rodapeMidiasSociais {
+    background-color: #2B2B2B;
+    text-align: center;
+    padding: 15px 0;
+}
+footer .rodapeMidiasSociais h3{
+    color: #FF0000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 550;
+}
+footer .rodapeMidiasSociais a i{
+    font-size: 2rem;
+    margin: 0 5px;
+    color: white;
+}
+footer .rodapeFinal{ 
+    padding-top: 40px;
+    background-color: black;
+    text-align: center;
+}
+footer .rodapeFinal figure a img{
+    margin: 0 auto;
+}
+footer .rodapeFinal p{ 
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color: white;
+    font-size: 12px;
+}
+footer .rodapeFinal p a{
+    color: white;
+    font-weight: bold;
+}
+/****** Medias Querys *****/
+@media screen and (max-width: 470px){
+    footer .rodapeInstitucional .d-flex {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 470px){
+}
+@media screen and (min-width: 515px){
+}
+@media screen and (min-width: 1000px){
+    footer {
+        background-color: black;
+    }
+    footer .rodapeSelos {
+        margin: 0 auto;
+        padding: 20px 20px 50px;
+        display: flex;
+    }
+    footer .rodapeSelos .formasPagamento, 
+    footer .rodapeSelos .certificadoSeguranca{
+        margin: 10px 0 0;
+        width: 50%;
+        padding: 0;
+    }
+    footer .rodapeSelos .certificadoSeguranca h4 {
+        margin: 0;
+    }
+    footer .rodapeInstitucional .d-flex{
+        justify-content: space-around;
+    }
+    footer .rodapeInstitucional div ul {
+        padding-left: 0;
+        display: block;
+    }
+    footer .rodapeInstitucional div ul li a{
+        font-size: 80%;
+    }
+
+}/****** Medias Querys *****/
+@media screen and (max-width: 470px){
+    footer .rodapeInstitucional .d-flex {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 470px){
+}
+@media screen and (min-width: 515px){
+}
+@media screen and (min-width: 1000px){
+    footer {
+        background-color: black;
+    }
+    footer .rodapeSelos {
+        margin: 0 auto;
+        padding: 20px 20px 50px;
+        display: flex;
+    }
+    footer .rodapeSelos .formasPagamento, 
+    footer .rodapeSelos .certificadoSeguranca{
+        margin: 10px 0 0;
+        width: 50%;
+        padding: 0;
+    }
+    footer .rodapeSelos .certificadoSeguranca h4 {
+        margin: 0;
+    }
+    footer .rodapeInstitucional .d-flex{
+        justify-content: space-around;
+    }
+    footer .rodapeInstitucional div ul {
+        display: block;
+    }
+    footer .rodapeInstitucional div ul li a{
+        font-size: 80%;
+    }
+
+}
