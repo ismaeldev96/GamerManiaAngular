@@ -14,6 +14,8 @@ import { BuscaComponent } from './views/pages/busca/busca.component';
 import { ContatoComponent } from './views/pages/contato/contato.component';
 import { UsuarioComponent } from './views/pages/usuario/usuario.component';
 import { FavoritoComponent } from './views/pages/favorito/favorito.component';
+import { FormsModule } from '@angular/forms';
+import { CardProdutoComponent } from './views/pages/card-produto/card-produto.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +30,13 @@ import { FavoritoComponent } from './views/pages/favorito/favorito.component';
     BuscaComponent,
     ContatoComponent,
     UsuarioComponent,
-    FavoritoComponent
+    FavoritoComponent,
+    CardProdutoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

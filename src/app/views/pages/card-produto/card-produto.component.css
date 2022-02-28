@@ -1,0 +1,85 @@
+.cardProduto{
+    display: flex;
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #FFF;
+    /*border: thin solid #AAA;*/
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px #6A6A6A;
+    width: 100%;
+}
+.cardProduto header{
+    width: 45%;
+}
+ .cardProduto header .cardProdutoClassificacao{
+    width: 100%;
+    color: red;
+    margin-bottom: 10px;
+}
+.cardProduto header img{
+    width: 100%;
+}
+.cardProduto div {
+    width: 60%;
+}
+.cardProduto div .cardProdutoInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 76%;
+}
+.cardProduto div .cardProdutoInfo h3.produto_titulo{
+    font-size: 0.9rem;
+    color: #7d7d7d;
+}
+.cardProduto div .cardProdutoInfo span{
+    color: #AAA;
+    font-size: 0.7rem;
+}
+.cardProduto div .cardProdutoInfo strong{
+    color: red;
+    font-size: 120%;
+}
+.cardProduto div .btnPagamento{
+    font-size: 1rem;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    width: 100%;
+    font-weight: 600;
+    background-color: #FF0000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 25px;
+}
+/****** Medias Querys *****/
+@media screen and (max-width: 470px){
+
+}
+@media screen and (min-width: 470px){
+    .cardProduto{
+        width: 48%;
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    .cardProduto header{
+        width: 100%;
+        padding: 10px 10px 0;
+
+    }
+    .cardProduto div {
+        width: 100%;
+        
+    }
+    .cardProduto div .cardProdutoInfo{
+        padding: 0px 10px;
+    }
+}
+@media screen and (min-width: 515px){
+    .cardProduto{
+        width: 240px;
+        margin: 0 3px 5px;
+    }
+}
