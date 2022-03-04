@@ -1,16 +1,16 @@
 <div class="container-grid">
     <div class="tituloForm"><i class="fas fa-user"></i> <h2>Identificação</h2></div>
-    <div class="contForm d-flex">
+    <div class="contForm d-flex mb-5">
         <section class="formLogin">
-            <form>
+            <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
                 <h2>Já Tenho cadastro</h2>
                 <div class="grupoInputs">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" [(ngModel)]="loginModel.email">
                         <label for="floatingInput">Email:</label>
                     </div>
                     <div class="form-floating">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password" [(ngModel)]="loginModel.password">
                         <label for="floatingPassword">Senha:</label>
                     </div>
                     <div class="btnGroupEntar">
@@ -36,7 +36,26 @@
         <div class="linhaForm"></div>
         
         <section class="formCadastro">
-
+            <form #cadastroForm="ngForm">
+                <h2>Quero me cadastar</h2>
+                    <div class="grupoInputs">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com">
+                            <label for="floatingInputEmail">E-mail:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingInputPassword" placeholder="Crie sua senha">
+                            <label for="floatingInputPassword">Senha:</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPasswordCheck" placeholder="Confirme sua Senha">
+                            <label for="floatingPasswordCheck">Confirmar Senha:</label>
+                        </div>
+                        <div class="btnGroupEntar">
+                            <button class="btnEntrar" type="submit"><i class="fas fa-sign-in-alt"></i> Cadastar </button>
+                        </div>
+                    </div>
+                </form>
         </section>
     </div>
 </div>

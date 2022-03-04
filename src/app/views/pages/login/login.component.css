@@ -140,3 +140,16 @@ button.btnEntrar i {
 .formContato button.btn-Env-tm {
     width: 50%;
 }
+@media screen and (min-width: 515px){
+    .contForm {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .formLogin{
+        width: 40%;
+    }
+    .formCadastro{
+        width: 40%;
+    }
+}
