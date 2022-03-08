@@ -1,21 +1,25 @@
-<div class="cardProduto">
-    <header>
-        <div class="cardProdutoClassificacao">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-            <i class="far fa-star"></i>
+<div class="row">
+    <div *ngFor="let produto of listaProdutos" class="cardProduto">
+        <header>
+            <div class="cardProdutoClassificacao">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <img [src]=produto.img alt="">
+        </header>
+        <div>
+            <div class="cardProdutoInfo">
+                <h3 class="produto_titulo">{{ produto.title }}</h3>
+                <span class="txt-thr">De: R$ 2.000,00</span>
+                <strong>Por: R$ 1.500,00</strong> 
+                <span>a vista ou no boleto</span>
+            </div>
         </div>
-        <img src="./assets/img/cad-foto.jpg" alt="">
-    </header>
-    <div>
-        <div class="cardProdutoInfo">
-            <h3 class="produto_titulo">Processador Intel Core i7-9700F, Cache 12MB....</h3>
-            <span class="txt-thr">De: R$ 2.000,00</span>
-            <strong>Por: R$ 1.500,00</strong> 
-            <span>a vista ou no boleto</span>
+        <div class="footer-card">
+            <a class="btnPagamento" routerLink="/page/produto"><div>Comprar</div><i class="fas fa-shopping-cart"></i></a>
         </div>
-        <a class="btnPagamento" routerLink="/page/produto"><div>Comprar</div><i class="fas fa-shopping-cart"></i></a>
-    </div>
-</div><!-- end cardProduto -->
+    </div><!-- end cardProduto -->
+</div>

@@ -1,0 +1,39 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "img": "./assets/img/cad-foto.jpg",
+      "title": "Plastation 5",
+      "price": 5.5,
+      "deduct": 20
+    },
+    {
+      "img": "./assets/img/cad-foto.jpg",
+      "title": "Processador Intel Core i7-9700F, Cache 12MB....",
+      "price": 12000,
+      "deduct": 20,
+      "id": 4
+    },
+    {
+      "img": "./assets/img/cad-foto.jpg",
+      "title": "Iphone 13",
+      "price": 12000,
+      "deduct": 20,
+      "id": 3
+    },
+    {
+      "img": "./assets/img/cad-foto.jpg",
+      "title": "Iphone 13",
+      "price": 12000,
+      "deduct": 20,
+      "id": 2
+    },
+    {
+      "img": "./assets/img/cad-foto.jpg",
+      "title": "Iphone 13",
+      "price": 12000,
+      "deduct": 20,
+      "id": 5
+    }
+  ]
+}

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Produto } from 'src/app/models/produto';
+import { NoticiaService } from 'src/app/services/noticia.service';
 
 @Component({
   selector: 'app-card-produto',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardProdutoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private NoticiaService: NoticiaService) { }
 
-  ngOnInit(): void {
+  listaProdutos = [] as Produto[];
+
+  ngOnInit(): void {7
+    this.carregarProdutos();
   }
 
+  carregarProdutos(){
+    this.NoticiaService.getProdutos().subscribe( (produtosRecebidos: Produto[]) => {
+      this.listaProdutos = produtosRecebidos;
+    })
+  }
 }
