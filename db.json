@@ -1,4 +1,12 @@
 {
+  "users": [
+    {
+      "email": "mododeus@abc.com",
+      "password": "$2a$10$FfSnGufG4P2fMTbbgJScbed0erH.Rrx6yJlzCRpuD.9XuNvK4nXiO",
+      "nome": "Super-Usuario",
+      "id": 1
+    }
+  ],
   "product": [
     {
       "id": 1,
